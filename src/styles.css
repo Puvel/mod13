@@ -1,0 +1,116 @@
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(133, 129, 129);
+}
+
+.gallery {
+  margin: 0 auto;
+}
+.photo-card {
+  width: 350px;
+  margin-bottom: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.js-btn-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.js-btn-visibil {
+  visibility: visible;
+  opacity: 1;
+}
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 95%;
+  padding: 30px 30px 6px 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-clip: padding-box;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  background-clip: padding-box;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  padding-left: 25px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  border-radius: 4px;
+  float: right;
+  border: 1px solid #253737;
+  background: #416b68;
+  padding: 10.5px 21px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  text-shadow: #333333 0 1px 0;
+  color: #e1e1e1;
+  font-size: 24px;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid #253737;
+  text-shadow: #333333 0 1px 0;
+  background: #416b68;
+  color: #fff;
+}
+.btn:active {
+  margin-top: 1px;
+  text-shadow: #333333 0 -1px 0;
+  border: 1px solid #333333;
+  background: #ffcc00;
+  color: #fff;
+  box-shadow: rgba(255, 255, 255, 0) 0 1px 0,
+    inset rgba(255, 255, 255, 0.7) 0 1px 0;
+  outline: none;
+}
